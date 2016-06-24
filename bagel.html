@@ -1,0 +1,76 @@
+<!DOCTYPE>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Coop Fountain</title>
+
+  <!-- Sets initial viewport load and disables zooming -->
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+  <!-- Make prototype chrome-less once bookmarked to phone's home screen -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <!-- Include Ratchet CSS -->
+  <link href="css/ratchet.min.css" rel="stylesheet">
+    
+   <!-- Include jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+  <!-- Include our script -->
+  <script src="js/coop.js"></script>    
+
+</head>
+
+<body>
+
+  <!-- Our content will go here -->
+  <header class="bar bar-nav">
+    <a href="index.html">
+      <button class="btn pull-left">
+        Menu
+      </button>
+    </a>
+    <h1 class="title">
+      Coop Fountain
+    </h1>
+        <button class="btn pull-right">
+        Tray
+      </button>
+  </header>
+
+  <div class="content" data-item="bagel" data-plain="1.40">
+    <ul class="table-view">
+      <li class="table-view-cell">
+        <input type="checkbox" value="cream cheese" data-extra=".85">
+        Add cream cheese
+        <span class="badge badge-inverted">$0.85</span>
+      </input>
+      </li>
+      <li class="table-view-cell">
+        <input type="checkbox" value="lox" data-extra="3.00">
+        Add lox
+        <span class="badge badge-inverted">$3.00</span>
+      </input>
+      </li>
+      <li class="table-view-cell">
+        <input type="checkbox" value="veggies" data-extra=".75">
+        Add veggies
+        <span class="badge badge-inverted">$0.75</span>
+      </input>
+      </li>
+      <li class="table-view-cell">
+        <input type="checkbox" value="bacon" data-extra=".99">
+        Add bacon
+        <span class="badge badge-inverted">$0.99</span>
+      </input>
+      </li>
+    </ul>
+
+    <button class="btn btn-positive btn-block order">Order</button>
+  </div>
+
+
+</body>
+</html>
